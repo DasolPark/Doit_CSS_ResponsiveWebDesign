@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pixel To Percent 3(font)</title>
+    <style>
+      * {
+        /* 기본 16px */
+        font-size: 100%;
+      }
+
+      .para {
+        /* 16의 4배인 64px */
+        font-size: 4em;
+      }
+
+      .para p {
+        /* 상속 때문에 6em이 되어버림 */
+        /* font-size: 2em; */
+        font-size: 4rem;
+      }
+      .vw {
+        font-size: 5vw;
+      }
+      .vh {
+        font-size: 5vh;
+      }
+      .vmin {
+        font-size: 5vmin;
+      }
+      .vmax {
+        font-size: 5vmax;
+      }
+      .test {
+        font-size: 96px;
+      }
+      .btn {
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    hi
+    <div class="para">
+      Fluid Font1
+      <p>Fluid Font2</p>
+    </div>
+    <p class="vw">vw</p>
+    <p class="vh">vh</p>
+    <p class="vmin">vmin</p>
+    <p class="vmax">vmax</p>
+    <p class="test">px</p>
+    <div class="btnWrapper">
+      <button class="btn">Complete</button>
+    </div>
+  </body>
+</html>

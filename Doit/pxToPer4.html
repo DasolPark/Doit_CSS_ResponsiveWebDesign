@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pixel To Percent(Multi Media)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #wrap {
+        width: 90%;
+        margin: 0 auto;
+        border: 4px solid black;
+        display: flex;
+      }
+
+      #wrap div {
+        width: 50%;
+      }
+
+      img,
+      video {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div>
+        <video controls preload="auto">
+          <source src="test.mp4" type="video/mp4" />
+          <source src="test.video.ogv" type="video/ovg" />
+          <source src="test.video.webm" type="video.webm" />
+        </video>
+      </div>
+      <div>
+        <img src="testimg.jpg" alt="ski" />
+      </div>
+    </div>
+  </body>
+</html>
